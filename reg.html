@@ -5,7 +5,124 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
 
+<style>
+
+.bookingdiv{
+    min-width: 500px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#form{
+    display: block;
+    width: 400px;
+    margin: 20vh auto 9 auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#form h1 {
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #272727;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-control.success input {
+    outline: #09c372;
+}
+
+.input-control.failed input {
+    outline: #ff3860 solid 2px;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+.input-control small {
+    color: #ff3860;
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+    <div class="bookingdiv">
+        <form id="form">
+            <h1>Registrering</h1>
+            <div class="input-control">
+                <label for="namn">Namn</label>
+                <input id="namn" name="namn" type="text">
+                <!-- Behöver ställa in margins för small -->
+                <small></small>
+            </div>
+            <div class="input-control">
+                <label for="ägare">Ägare/passagerare</label>
+                <select id="ägare" name="ägare">
+                    <option value="egen bil">Äger egen bil</option>
+                    <option value="passagerare">Passagerare</option>
+                </select> 
+                <!-- Behöver ställa in margins för small -->
+                <small></small>            
+            </div>
+            <div class="input-control">
+                <label for="platser">Platser i bilen</label>
+                <input id="platser" name="platser" type="text">
+                <small></small>
+            </div>
+            <div class="input-control">
+                <label for="från">Resa från</label>
+                <input id="från" name="från" type="text">
+                <!-- Behöver ställa in margins för small -->
+                <small></small>
+            </div>
+            <div class="input-control">
+                <label for="till">Resa till</label>
+                <input id="till" name="till" type="text">
+                <!-- Behöver ställa in margins för small -->
+                <small></small>
+            </div>
+            <div class="input-control">
+                <label for="datum">Datum för resa</label>
+                <input id="datum" name="datum" type="datetime-local">
+                <!-- Behöver ställa in margins för small -->
+                <small></small>
+            </div>
+            <button type="submit" id="submit">Skicka in</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
