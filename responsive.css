@@ -1,3 +1,9 @@
-﻿body
-{
+﻿/* media querys */
+/* for tablets */
+@media screen and (max-width: 768px){
+
+}
+/* for cellphones */
+@media screen and (max-width: 480px){
+    
 }
