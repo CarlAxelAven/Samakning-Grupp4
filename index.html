@@ -2,103 +2,67 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<link rel="stylesheet" href="Styling.css">
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
 </head>
 <body>
+ 
 
 <div class="navbar">
   <a href="reg.html">Registrering</a>
-  <a href="#news">Kontakt</a>
-  <div class="dropdown">
-    <button class="dropbtn">Mer 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Logga in</a>
-      <a href="bokn.html">Bokning</a>
+  <a href="bokn.html">Bokning</a>
+  <a href="#">Logga in</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+      <input type="text" placeholder="Sök.." name="Sök...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
-  </div> 
 </div>
 
-<!--Boxen med login-->
-<div class="bg-img">
-  <form action="/action_page.php" class="container">
-    <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-  </form>
+<div>
+<h1>Allmänna användarvillkor</h1>
+<br>
+<h>Välkommen vi förenklar sökandet efter lämpliga pendlare för den dagliga resan till jobbet.</h>
+<br>
+<h2>Allmänt.</h2>
+<p>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  when an unknown printer took a galley of type and scrambled it to make a type 
+  specimen book. It has survived not only five centuries, but also the leap into 
+  electronic typesetting, remaining essentially unchanged. It was popularised 
+  in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+  and more recently with desktop publishing software like Aldus PageMaker including 
+  versions of Lorem Ipsum.
+</p>
+<br>
+<h3>Regler.</h3>
+<p>
+It is a long established fact that a reader will be distracted by the readable content of 
+a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+normal distribution of letters, as opposed to using 'Content here, content here', 
+making it look like readable English. Many desktop publishing packages and web page 
+editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
+will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+sometimes by accident, sometimes on purpose (injected humour and the like).
+</p>
+<br>
+<h4>Hur du skapar ett konto.</h4>
+<p>
+  Contrary to popular belief, Lorem Ipsum is not simply random text. 
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+  looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
+  and going through the cites of the word in classical literature, discovered the undoubtable source. 
+  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+  (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise 
+  on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+  "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+</p>
 </div>
 
 
