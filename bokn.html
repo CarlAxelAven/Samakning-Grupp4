@@ -5,79 +5,238 @@
     <title>bekr</title>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="Styling.css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <script defer src="script.js"></script>
     <script type=module src=headerandfooter.js></script>
     <script defer src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-</head>
+
+    <style>
+      .layout {
+          width: 1366px;
+          height: 768px;
+        
+          display: grid;
+          grid:
+            "sidebar body" 1fr
+            / 30% 70%;
+          gap: 8px;
+        }
+        
+        .sidebar { grid-area: sidebar; }
+        .body { grid-area: body; }
+      
+      
+      
+        * {box-sizing: border-box;}
+      ul {list-style-type: none;}
+      body {font-family: Verdana, sans-serif;}
+      
+      .month {
+        padding: 70px 25px;
+        width: 100%;
+        background: #1abc9c;
+        text-align: center;
+      }
+      
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+      }
+      
+      .month .next {
+        float: right;
+        padding-top: 10px;
+      }
+      
+      .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+      }
+      
+      .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+      }
+      
+      .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+      }
+      
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+      }
+      
+      .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+      }
+      
+      /* Add media queries for smaller screens */
+      @media screen and (max-width:720px) {
+        .weekdays li, .days li {width: 13.1%;}
+      }
+      
+      @media screen and (max-width: 420px) {
+        .weekdays li, .days li {width: 12.5%;}
+        .days li .active {padding: 2px;}
+      }
+      
+      @media screen and (max-width: 290px) {
+        .weekdays li, .days li {width: 12.2%;}
+      }
+          </style>
+
+  </head>
 <body>
 
   <the-header></the-header>
 
-<p><b>Vänligen ange vilken destination du vill boka!</b></p>
-
-<form>
-  <input type="checkbox" id="destination" name="destination" value="HTML">
-  <label for="html">Eksjö till Nässjö</label><br>
-
-  <br>
- 
-  <input type="checkbox" id="destination" name="destination" value="CSS">
-  <label for="css">Nässjö till Eksjö</label><br>
+    <section class="layout">
+      <div class="month">     
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              August<br>
+              <span style="font-size:18px">2022</span>
+            </li>
+          </ul>
+        
+        
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+        
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li><span class="active">10</span></li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+    </div>
+      
+      <div class="sidebar">
+  <p><b>Vänligen ange vilken destination du vill boka!</b></p>
+  
+  <form>
+    <input type="checkbox" id="destination" name="destination" value="HTML">
+    <label for="html">Eksjö till Nässjö</label><br>
+  
+    <br>
+   
+    <input type="checkbox" id="destination" name="destination" value="CSS">
+    <label for="css">Nässjö till Eksjö</label><br>
+    
+    <br>
+  
+    <input type="checkbox" id="destination" name="destination" value="JavaScript">
+    <label for="javascript">Norrköping till Linköping</label>
+  
+    <br>
+    <br>
+  
+    <input type="checkbox" id="destination" name="destination" value="JavaScript">
+    <label for="javascript">Linköping till Norrköping</label>
+  
+    <br>
+    <br>
+  
+    <input type="checkbox" id="destination" name="destination" value="JavaScript">
+    <label for="javascript">Stockholm till Malmö</label>
+  
+    <br>
+    <br>
+  
+    <input type="checkbox" id="destination" name="destination" value="JavaScript">
+    <label for="javascript">Malmö till Stockholm</label>
+  </form>
   
   <br>
-
-  <input type="checkbox" id="destination" name="destination" value="JavaScript">
-  <label for="javascript">Norrköping till Linköping</label>
-
   <br>
   <br>
-
-  <input type="checkbox" id="destination" name="destination" value="JavaScript">
-  <label for="javascript">Linköping till Norrköping</label>
-
   <br>
-  <br>
-
-  <input type="checkbox" id="destination" name="destination" value="JavaScript">
-  <label for="javascript">Stockholm till Malmö</label>
-
-  <br>
-  <br>
-
-  <input type="checkbox" id="destination" name="destination" value="JavaScript">
-  <label for="javascript">Malmö till Stockholm</label>
-
-
-
-
-</form>
-
-<br>
-<br>
-<br>
-<br>
-
-<p><b>Vänligen fyll i dina kontaktuppgifter!</b></p>
-
-
-<form action="bekr.html" method="get">
-    <label for="Förnamn">Förnamn:</label><br>
-    <input type="text" id="Förnamn" name="Förnamn" placeholder="Ditt förnamn" required><br>
-
-    
-    <label for="Efternamn">Efternamn:</label><br>
-    <input type="text" id="Efternamn" name="Efternamn" placeholder="Ditt efternamn" required>
-    <br>
-    <label for="Adress">Adress:</label><br>
-    <input type="text" id="Adress" name="Adress" placeholder="Din adress" required>
-    <br>
-    <label for="Telefonnummer">Telefonnummer:</label><br>
-    <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="Ditt telefonnummer" required>
-    <button type="Bekräfta">Bekräfta!</button>
-  </form>
-
-
-
-</body>
-</html>
+  
+  <p><b>Vänligen fyll i dina kontaktuppgifter!</b></p>
+  
+  
+  <form action="bekr.html" method="get">
+      <label for="Förnamn">Förnamn:</label><br>
+      <input type="text" id="Förnamn" name="Förnamn" placeholder="Ditt förnamn" required><br>
+  
+      
+      <label for="Efternamn">Efternamn:</label><br>
+      <input type="text" id="Efternamn" name="Efternamn" placeholder="Ditt efternamn" required>
+      <br>
+      <label for="Adress">Adress:</label><br>
+      <input type="text" id="Adress" name="Adress" placeholder="Din adress" required>
+      <br>
+      <label for="Telefonnummer">Telefonnummer:</label><br>
+      <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="Ditt telefonnummer" required>
+      <button type="Bekräfta">Bekräfta!</button>
+    </form>
+  </div>
+  </section>
+  
+  
+  
+  
+  </body>
+  </html>
