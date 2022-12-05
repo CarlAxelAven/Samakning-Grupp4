@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-  </html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="Styling" href="responsive.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Styling.css">
+  <link rel="Styling" href="responsive.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script defer src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script defer src="script.js"></script>
 <script type=module src=headerandfooter.js></script>
-<style>
-
-* {
+  <style>
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: rgb(4, 4, 4);
+    background-color: #333;
 }
 
 .navbar {
@@ -38,7 +35,7 @@ header {
 .navbar li a {
   float: left;
   font-size: 20px;
-  color: rgb(45, 54, 100);
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -53,7 +50,7 @@ header {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: rgb(20, 19, 19);
+  color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -61,13 +58,13 @@ header {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(120, 118, 118);
+  background-color: red;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #868686;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -83,7 +80,7 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(8, 8, 8);
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -99,27 +96,22 @@ header {
   justify-content: center;
 }
 </style>
-<nav>
-  <a class="burger-nav"></a>
-  <ul class="navbar">
-      <li><a href="konto.html">Skapa konto</a></li>             
-      <li><a href="reg.html">Boka tider</a></li>    
-      <li><a href="bokn.html">Bokning av resa</a></li>
-      <li><a href="#news">Kontakt</a></li>
-  </ul>
-  </nav>
+
 </head>
 <body>
-<the-header> </the-header>
 
-
- 
+<div class="navbar">
+  <a href="reg.html">Registrering</a>
+  <a href="bokn.html">Bokning</a>
+  <a href="#news">Logga in</a>
+  
+  
+</div>
 
 <div>
       <h1>Allmänna användarvillkor</h1>
   <br>
       <h>Välkommen vi förenklar sökandet efter lämpliga pendlare för den dagliga resan till jobbet.</h>
-  <br>
   <br>
       <h2>Allmänt.</h2>
       <p>
@@ -133,7 +125,6 @@ header {
       versions of Lorem Ipsum.
       </p>
   <br>
-  <br>
       <h3>Regler.</h3>
       <p>
         It is a long established fact that a reader will be distracted by the readable content of 
@@ -144,7 +135,6 @@ header {
       will uncover many web sites still in their infancy. Various versions have evolved over the years, 
       sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
-  <br>
   <br>
       <h4>Hur du skapar ett konto.</h4>
       <p>
