@@ -1,10 +1,9 @@
-//Kod för att öppna och stänga hamburgermenyn
-$(document).ready(function(){
-    $(".burger-nav").on("click", function(){
-        $(".navbar").toggleClass("open");
-    });
-});
-
+// //Kod för att öppna och stänga hamburgermenyn
+// $(document).ready(function(){
+//     $(".burger-nav").on("click", function(){
+//         $(".navbar").toggleClass("open");
+//     });
+// });
 const form = document.getElementById('form');
 const namn = document.getElementById('namn');
 const ägare = document.getElementById('ägare');

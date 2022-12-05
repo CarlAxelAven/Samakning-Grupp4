@@ -1,8 +1,42 @@
 /* media querys */
 /* for tablets */
 @media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
 
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        /* background-color: #262626; */
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border: none;
+    }
+
+    .navbar li{
+        margin: 16px 0;
+    }
+
+    .navbar.active{
+        left: 0;
+    }
 }
+
 /* for cellphones */
 @media screen and (max-width: 480px){
     .burger-nav{
