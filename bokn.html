@@ -34,14 +34,18 @@
       
         * {box-sizing: border-box;}
       ul {list-style-type: none;}
-      body {font-family: Verdana, sans-serif;}
-      
+      body {font-family: Verdana, sans-serif;
+        background: url(images/empty-empty.png) #6bc1dd;
+    background-repeat: no-repeat;
+    background-position: center;}
+
       .month {
         padding: 70px 25px;
         width: 100%;
-        background: #1abc9c;
+       /* background: #1abc9c ;  */
         text-align: center;
       }
+
       
       .month ul {
         margin: 0;
@@ -117,10 +121,12 @@
 
   </head>
 <body>
-
   <the-header></the-header>
+  <div class="car-symbol-nonindex"></div>
+<div class="bg-img">
 
     <section class="layout">
+      <div class="month-background">
       <div class="month">     
           <ul>
             <li class="prev">&#10094;</li>
@@ -176,6 +182,7 @@
           <li>31</li>
         </ul>
     </div>
+</div>
       
       <div class="sidebar">
   <p><b>Vänligen ange vilken destination du vill boka!</b></p>
@@ -237,6 +244,7 @@
       <button type="Bekräfta">Bekräfta!</button>
     </form>
   </div>
+</div>
   </section>
   
   
