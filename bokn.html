@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>bekr</title>
+    <title>bokn</title>
     <meta charset="utf-8" />
     <title></title>
     
@@ -27,21 +27,26 @@
           gap: 8px;
         }
         
-        .sidebar { grid-area: sidebar; }
+        .sidebar { grid-area: sidebar;
+        position: relative; }
         .body { grid-area: body; }
       
       
       
         * {box-sizing: border-box;}
       ul {list-style-type: none;}
-      body {font-family: Verdana, sans-serif;}
-      
+      body {font-family: Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;}
+
       .month {
         padding: 70px 25px;
         width: 100%;
-        background: #1abc9c;
+       /* background: #1abc9c ;  */
+       position: relative;
         text-align: center;
       }
+
       
       .month ul {
         margin: 0;
@@ -117,10 +122,11 @@
 
   </head>
 <body>
-
   <the-header></the-header>
+  
 
     <section class="layout">
+      <div class="month-background">
       <div class="month">     
           <ul>
             <li class="prev">&#10094;</li>
@@ -176,6 +182,7 @@
           <li>31</li>
         </ul>
     </div>
+</div>
       
       <div class="sidebar">
   <p><b>Vänligen ange vilken destination du vill boka!</b></p>
@@ -234,9 +241,10 @@
       <br>
       <label for="Telefonnummer">Telefonnummer:</label><br>
       <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="Ditt telefonnummer" required>
-      <button type="Bekräfta">Bekräfta!</button>
+      <button type="submit" id="Bekräfta" >Bekräfta!</button>
     </form>
   </div>
+
   </section>
   
   
