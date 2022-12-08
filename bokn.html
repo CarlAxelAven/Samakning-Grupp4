@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>bekr</title>
+    <title>bokn</title>
     <meta charset="utf-8" />
     <title></title>
     
@@ -27,7 +27,8 @@
           gap: 8px;
         }
         
-        .sidebar { grid-area: sidebar; }
+        .sidebar { grid-area: sidebar;
+        position: relative; }
         .body { grid-area: body; }
       
       
@@ -43,6 +44,7 @@
         padding: 70px 25px;
         width: 100%;
        /* background: #1abc9c ;  */
+       position: relative;
         text-align: center;
       }
 
@@ -241,7 +243,7 @@
       <br>
       <label for="Telefonnummer">Telefonnummer:</label><br>
       <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="Ditt telefonnummer" required>
-      <button type="Bekräfta">Bekräfta!</button>
+      <button type="submit" id="Bekräfta" >Bekräfta!</button>
     </form>
   </div>
 </div>
