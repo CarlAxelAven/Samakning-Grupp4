@@ -133,6 +133,7 @@ header {
   height: 120vh; 
   position: absolute;
   padding: 0 5%; */
+  position: relative;
   display: block;
   justify-content: center;  
   background: url(images/cloud-empty.png);
