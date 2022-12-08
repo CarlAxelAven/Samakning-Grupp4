@@ -37,6 +37,23 @@
         left: 0;
     }
 }
+.container{
+    display: block;
+    margin-inline: auto;
+    width: 50%;
+}
+.text-center{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.weight-center{
+    text-align: center;
+    font-size: large;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
 
 /* for cellphones */
 @media screen and (max-width: 480px){

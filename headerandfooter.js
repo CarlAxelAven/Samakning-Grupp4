@@ -11,7 +11,7 @@ class TheHeader extends HTMLElement {
                 <li><a href="konto.html" class="nav-link">Skapa konto</a></li>             
                 <li><a href="reg.html" class="nav-link">Registrering av bokbara tider</a></li>    
                 <li><a href="bokn.html" class="nav-link">Bokning av resa</a></li>
-                <li><a href="#news" class="nav-link">Kontakt</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
