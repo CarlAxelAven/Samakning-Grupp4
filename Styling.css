@@ -1,6 +1,12 @@
 ﻿ body {
+  height: 120vh;
+  justify-content: center; 
+background: url(images/empty-empty.png) #6BC1DD;
+background-position: center;
+background-repeat: no-repeat;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    background: url(images/empty-empty.png) #6bc1dd;
+    background: url(images/background.png) #6bc1dd;
     background-repeat: no-repeat;
     background-position: center;
   
@@ -130,9 +136,10 @@ header {
 }
 .bg-img{
   /* width: 100%;
-  height: 120vh; 
+  
   position: absolute;
   padding: 0 5%; */
+  height: 1150px; 
   position: relative;
   display: block;
   justify-content: center;  
@@ -197,8 +204,8 @@ background-repeat: no-repeat;
 }
 
 @keyframes logo-move{
-  0% {left:-450px; top:120px;}
-  100% {left:0px; top:0px;}
+  0% {left:-650px; top:160px;}
+  100% {left:-0px; top:0px;}
 }
 .standard-text{
   position: relative;
