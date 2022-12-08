@@ -15,6 +15,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
     .navbar{
+        overflow: visible;
         position: fixed;
         left: -100%;
         top: 70px;
